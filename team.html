@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team – Osunwa & Partners</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  header.small-hero {
+    background: url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 125px 20px;
+    position: relative;
+  }
+
+  header.small-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 60, 80, 0.7);
+  }
+
+  header.small-hero h1,
+  header.small-hero p {
+    position: relative;
+    z-index: 1;
+  }
+
+  nav {
+    background: #173e5b;
+    text-align: center;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffd700;
+  }
+
+  section {
+    padding: 60px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: #0d2538;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Managing partner large card */
+  .leader-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    text-align: center;
+  }
+  .leader-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .leader-card h3 {
+    font-size: 1.5rem;
+    color: #173e5b;
+    margin-bottom: 5px;
+  }
+  .leader-card p.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  .leader-card p.bio {
+    max-width: 600px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  /* Grid of other team members */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+
+  .member-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  .member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .member-card h4 {
+    font-size: 1.1rem;
+    color: #173e5b;
+    margin-bottom: 5px;
+  }
+  .member-card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  footer {
+    background-color: #0d2538;
+    color: white;
+    padding: 30px 20px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  footer h4 {
+    margin-bottom: 10px;
+    color: #ffd700;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  footer a:hover {
+    color: #ffd700;
+  }
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  /* Social icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 2.5rem;
+  }
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #ffd700;
+  }
+
+  .disclaimer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #173e5b;
+    color: white;
+    text-align: center;
+    padding: 10px 50px 10px 10px;
+    font-size: 0.85rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    z-index: 9999;
+  }
+  .disclaimer .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .disclaimer .close-btn:hover {
+    color: #ffd700;
+  }
+</style>
+</head>
+<body>
+
+<header class="small-hero">
+  <h1>Our Team</h1>
+  <p>Meet the Professionals Behind Osunwa & Partners</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="team.html">Team</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <div class="leader-card">
+    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Managing Partner">
+    <h3>Tony Osunwa</h3>
+    <p class="title">Managing Partner</p>
+    <p class="bio">
+      Tony Osunwa leads Osunwa & Partners with a deep commitment to justice and innovation in legal services.
+      With years of experience, he specializes in litigation, corporate law, and human rights advocacy.
+    </p>
+  </div>
+
+  <h2>Our Legal Experts</h2>
+  <div class="grid">
+    <div class="member-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+      <h4>Daniel Sørensen</h4>
+      <p>Senior Partner</p>
+    </div>
+    <div class="member-card">
+      <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+      <h4>Andrew Bornite</h4>
+      <p>Senior Partner</p>
+    </div>
+    <div class="member-card">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+      <h4>Amaka Nwosu</h4>
+      <p>Junior Partner</p>
+    </div>
+    <div class="member-card">
+      <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="">
+      <h4>Tunde Afolabi</h4>
+      <p>Associate</p>
+    </div>
+    <div class="member-card">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+      <h4>Chinelo Obi</h4>
+      <p>Associate</p>
+    </div>
+    <div class="member-card">
+      <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="">
+      <h4>Funmi Alabi</h4>
+      <p>Contact Officer</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Contact</h4>
+      <p>15 Broad Street, Victoria Island, Lagos</p>
+      <p>Phone: +234 802 345 6789</p>
+      <p>Email: info@osunwapartners.com</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Practice Areas</a>
+      <a href="team.html">Our Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/company/osunwa-partners" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/osunwapartners" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://facebook.com/osunwapartners" target="_blank"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Osunwa & Partners. All Rights Reserved.
+  </div>
+</footer>
+
+<div class="disclaimer" id="disclaimer">
+  <span>This website provides general legal information and does not constitute legal advice.</span>
+  <button class="close-btn" onclick="document.getElementById('disclaimer').style.display='none'">&times;</button>
+</div>
+
+</body>
+</html>

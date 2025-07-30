@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About – Osunwa & Partners</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  header.small-hero {
+    background: url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 125px 20px;
+  position: relative;
+}
+
+header.small-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 60, 80, 0.7);
+}
+
+header.small-hero h1,
+header.small-hero p {
+  position: relative;
+  z-index: 1;
+}
+
+  nav {
+    background: #173e5b;
+    text-align: center;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffd700;
+  }
+
+  section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    align-items: center;
+  }
+
+  .two-column img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    color: #0d2538;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  footer {
+    background-color: #0d2538;
+    color: white;
+    padding: 30px 20px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  footer h4 {
+    margin-bottom: 10px;
+    color: #ffd700;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  footer a:hover {
+    color: #ffd700;
+  }
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #ffd700;
+  }
+
+  .disclaimer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #173e5b;
+    color: white;
+    text-align: center;
+    padding: 10px 50px 10px 10px;
+    font-size: 0.85rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    z-index: 9999;
+  }
+  .disclaimer .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .disclaimer .close-btn:hover {
+    color: #ffd700;
+  }
+</style>
+</head>
+<body>
+
+<header class="small-hero">
+  <h1>About Our Firm</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="team.html">Team</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Who We Are -->
+<section>
+  <div class="two-column">
+    <img src= "https://images.unsplash.com/photo-1593113598332-e59a8fba60bd?auto=format&fit=crop&w=1950&q=80">
+    <div>
+      <h2>Who We Are</h2>
+      <p>
+        Osunwa & Partners is a distinguished Nigerian law firm known for excellence,
+        integrity, and advocacy. We were founded to close the gap between
+        the privileged and the underprivileged in accessing justice.
+      </p>
+      <p>
+        Our team of experienced lawyers, including Senior Advocates of Nigeria (SAN),
+        handle high-profile litigation, complex corporate advisory, and public interest
+        cases. We are passionate about human rights, good governance, and community impact.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Mission / Vision / Values -->
+<section style="background:#f0f2f5;">
+  <h2>Our Foundational Principles</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To make justice accessible and affordable while upholding the rule of law and empowering communities.</p>
+    </div>
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To be a leading force for justice, fairness, and innovation in legal practice across Africa.</p>
+    </div>
+    <div class="card">
+      <h3>Core Values</h3>
+      <p>Integrity, Excellence, Empathy, and Service to humanity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Hypothetical Cases -->
+<section>
+  <h2>Landmark Matters We Have Handled</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Community Justice Reform</h3>
+      <p>Represented marginalized communities in a class action that led to improved housing rights.</p>
+    </div>
+    <div class="card">
+      <h3>Pro Bono Criminal Defense</h3>
+      <p>Defended hundreds of indigent clients facing wrongful convictions and secured their release.</p>
+    </div>
+    <div class="card">
+      <h3>Corporate Advisory</h3>
+      <p>Guided SMEs on regulatory compliance, contracts, and expansion strategies with success.</p>
+    </div>
+    <div class="card">
+      <h3>Oil & Gas Arbitration</h3>
+      <p>Represented a Nigerian oil firm in a billion-naira arbitration, achieving a favorable award.</p>
+    </div>
+    <div class="card">
+      <h3>Election Petition Advocacy</h3>
+      <p>Handled sensitive election petition matters, safeguarding the mandate of underserved communities.</p>
+    </div>
+    <div class="card">
+      <h3>International Trade Negotiations</h3>
+      <p>Advised on cross-border trade contracts, ensuring clients comply with global best practices.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Contact</h4>
+      <p>15 Broad Street, Victoria Island, Lagos</p>
+      <p>Phone: +234 802 345 6789</p>
+      <p>Email: info@osunwapartners.com</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="services.html">Practice Areas</a>
+      <a href="team.html">Our Team</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/company/osunwa-partners" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/osunwapartners" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://facebook.com/osunwapartners" target="_blank"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Osunwa & Partners. All Rights Reserved.
+  </div>
+</footer>
+
+<div class="disclaimer" id="disclaimer">
+  <span>This website provides general legal information and does not constitute legal advice.</span>
+  <button class="close-btn" onclick="document.getElementById('disclaimer').style.display='none'">&times;</button>
+</div>
+
+</body>
+</html>
