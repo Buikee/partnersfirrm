@@ -1,0 +1,63 @@
+h1.firm-name {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* For all h2 titles */
+h1 {
+  font-family: '', serif; /* Use Playfair Display */
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: 700;   /* Make it bold */
+  color: white;    /* Keep your existing color */
+  margin-bottom: 20px;
+  text-align: center; /* Optional, if you want them centered */
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0; /* remove horizontal margin to rely on padding */
+  font-weight: bold;
+  padding: 0 15px; /* spacing inside each tab */
+  position: relative;
+}
+
+/* Add vertical separator */
+nav a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 1px; /* thickness of the stroke */
+  height: 50%; /* length of the stroke */
+  background-color: rgba(255, 255, 255, 0.5); /* subtle white line */
+}
+
+footer h4 {
+  margin-bottom: 12px;
+  color: #ffd700;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 7px 0;
+  font-size: 0.9rem;
+}
+
+.hero {
+  background-color: teal; /* or background-color: #ccc for ash */
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+nav {
+    background: #173e5b;
+    text-align: center;
+    padding: 20px;
+  }
