@@ -53,11 +53,11 @@ footer p {
   background-color: teal; /* or background-color: #ccc for ash */
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 20px 20px;
 }
 
 nav {
     background: #173e5b;
     text-align: center;
-    padding: 200px;
+    padding: 20px;
   }
